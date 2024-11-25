@@ -3,7 +3,8 @@ import json
 import os
 import time
 
-
+import locale
+locale.setlocale(locale.LC.CTYPE,'chinese')
 # 提取两个字符串之间的内容
 def extract_string_between(source_string, start_string, end_string):
     start_index = source_string.find(start_string) + len(start_string)
